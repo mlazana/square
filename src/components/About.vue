@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-  <div class="container">
+  
     <div class="navBar">
       <img src="../assets/logo1.png"> 
         <ul>
@@ -11,7 +11,7 @@
     </div>
     
       
-      
+      <div class="container">
       <section>
       <h1>ABOUT <b> US</b></h1> 
           <hr> <br>
@@ -26,35 +26,35 @@
         <code>
           <div class="row">
             <div class="column" >
-            <img src="../assets/pc.png" style="width:70px;">
+            <img src="../assets/graphic.png" style="width:60px;">
               <h2>Graphic Design</h2> 
               <hr class="in-card">
               <p class="in-column">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
                 has beem the industry's standard dummy text ever since the 1500s.</p>
             </div>
             <div class="column" >
-            <img src="../assets/pc.png" style="width:70px;">
+            <img src="../assets/print.png" style="width:55px;">
               <h2>Graphic Design</h2> 
               <hr class="in-card">
-              <p class="in-column">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                has beem the industry's standard dummy text ever since the 1500s.</p>
+              <p class="in-column">When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              It has survived not only five centuries.</p>
             </div>
           </div>
 
           <div class="row">
             <div class="column" >
-            <img src="../assets/pc.png" style="width:70px;">
+            <img src="../assets/pc.png" style="width:60px;">
               <h2>Graphic Design</h2> 
               <hr class="in-card">
-              <p class="in-column">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                has beem the industry's standard dummy text ever since the 1500s.</p>
+              <p class="in-column">But also the leap into electronic typsetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.</p>
             </div>
             <div class="column" >
-            <img src="../assets/pc.png" style="width:70px;">
+            <img src="../assets/settings.png" style="width:60px;">
               <h2>Graphic Design</h2> 
               <hr class="in-card">
-              <p class="in-column">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                has beem the industry's standard dummy text ever since the 1500s.</p>
+              <p class="in-column">and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+              It is not only simply a random text.</p>
             </div>
           </div>
          </code>
@@ -118,14 +118,16 @@ aside {
   padding-top: 80px;
 }
 
-
 .navBar{
-  padding-top: 50px;
+  padding-top: 80px;
+  padding-right: 40px;
+  padding-left: 150px;
 }
+
 
 .container{
   padding-left: 150px;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-right: 150px;
 }
 p.in-column{
@@ -146,6 +148,7 @@ h2 {
 }
 ul {
   float: right;
+  padding-right: 100px;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
