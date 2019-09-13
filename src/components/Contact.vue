@@ -32,6 +32,14 @@
       <aside>
         <code>
           
+<form>
+  
+  <input type="text" id="name" name="name" placeholder="Your Name">
+  <input type="text" id="email" name="email" placeholder="Your Email">
+  <input type="text" id="company" name="company" placeholder="Your Company">
+  <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
+  <input type="submit" value="Submit" >
+</form>
          </code>
       </aside>
     </div>  
@@ -44,6 +52,46 @@ export default {
 }
 </script>
 <style scoped>
+
+/* ----------Contact Form---------- */
+
+input[type=text] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 30px;
+}
+textarea {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+input[type=submit]{
+  border: 2px solid #ed3e3e;
+  color: #ed3e3e;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: white;
+}
+input[type=submit]:hover {
+  background-color: #FFD7D7;
+}
+
+/* ----------End Contact Form---------- */
+
 /* ----------Navbar---------- */
 
 .navBar{
@@ -79,7 +127,6 @@ li a {
 
 .container{
   padding-left: 150px;
-  padding-top: 40px;
   padding-right: 150px;
 }
 
@@ -116,7 +163,7 @@ li a {
 section {
   padding-top: 50px;
   float: left;
-  width: 35%;
+  width: 25%;
 }
 
 /* ----------End Left Section---------- */
@@ -125,7 +172,7 @@ section {
 
 aside {
   float: right;
-  width: 60%;
+  width: 65%;
   padding-top: 80px;
 }
 
@@ -146,8 +193,9 @@ p.in-column{
 }
 p {
   color: white;
-  font-size: 20px;
-  padding-bottom : 20px;
+  font-size: 18px;
+  padding-bottom : 10px;
+  
 }
 h1 {
   color: white;
