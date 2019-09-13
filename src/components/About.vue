@@ -103,7 +103,6 @@ li a {
 
 .container{
   padding-left: 150px;
-  padding-top: 40px;
   padding-right: 150px;
 }
 
@@ -170,7 +169,7 @@ p.in-column{
 }
 p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 h1 {
   color: white;
