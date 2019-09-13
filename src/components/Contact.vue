@@ -8,38 +8,33 @@
         </ul>
         <router-view/>
     </div>
-    
-      
-      <div class="container">
+    <div class="container">
       <section>
-      <h1>CONTACT <b> US</b></h1> 
-          <hr> <br>
-          <p>
-            We are here to help you and find answers to your questions on our Support section. If you can't
-            find answer to your question or have any feedback, reach out to us by completing the form. All fields
-            are mandatory unless otherwise stated.
-          </p>
-          <hr> <br>
-          <p><b>Adress:</b> 123 Palo Alto, Palo Alto, CA 94300</p>
-          <p><b>Phone:</b> +1 234-567-8910</p>
-          <p><b>Email:</b> contact@yourdomain.net</p>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
+        <h1>CONTACT <b> US</b></h1> 
+        <hr> <br>
+        <p>
+          We are here to help you and find answers to your questions on our Support section. If you can't
+          find answer to your question or have any feedback, reach out to us by completing the form. All fields
+          are mandatory unless otherwise stated.
+        </p>
+        <hr> <br>
+        <p><b>Adress:</b> 123 Palo Alto, Palo Alto, CA 94300</p>
+        <p><b>Phone:</b> +1 234-567-8910</p>
+        <p><b>Email:</b> contact@yourdomain.net</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
       </section>
-
       <aside>
-        <code>
-          
-<form>
-  
-  <input type="text" id="name" name="name" placeholder="Your Name">
-  <input type="text" id="email" name="email" placeholder="Your Email">
-  <input type="text" id="company" name="company" placeholder="Your Company">
-  <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
-  <input type="submit" value="Submit" >
-</form>
+        <code>         
+          <form> 
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <input type="text" id="email" name="email" placeholder="Your Email">
+            <input type="text" id="company" name="company" placeholder="Your Company">
+            <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
+            <input type="submit" value="Submit" >
+          </form>
          </code>
       </aside>
     </div>  
@@ -52,6 +47,44 @@ export default {
 }
 </script>
 <style scoped>
+
+.container{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* ----------Navbar---------- */
+
+.navBar{
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-left: 150px;
+}
+
+ul {
+  float: right;
+  padding-right: 100px;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* ---------- End Navbar---------- */
 
 /* ----------Contact Form---------- */
 
@@ -91,44 +124,6 @@ input[type=submit]:hover {
 }
 
 /* ----------End Contact Form---------- */
-
-/* ----------Navbar---------- */
-
-.navBar{
-  padding-top: 80px;
-  padding-right: 40px;
-  padding-left: 150px;
-}
-
-ul {
-  float: right;
-  padding-right: 100px;
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-/* ---------- End Navbar---------- */
-
-.container{
-  padding-left: 150px;
-  padding-right: 150px;
-}
 
 /* ----------Card---------- */
 
@@ -186,7 +181,7 @@ code {
 }
 /* ----------End Right Section---------- */
 
-
+/* ----------Text--------- */
 p.in-column{
   font-size: 19px;
   color:#36383b;
@@ -228,6 +223,8 @@ hr.in-card {
   height: 1px;
   background-color: #ed3e3e;
 }
+/* ----------End Text---------- */
+
 /* ----------fa Icons---------- */
 
 .fa {
