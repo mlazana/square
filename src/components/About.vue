@@ -7,20 +7,17 @@
         <li> <router-link to="Contact"> <b>Get in touch</b></router-link></li>
         </ul>
         <router-view/>
-    </div>
-    
-      
-      <div class="container">
+    </div>  
+    <div class="container">
       <section>
-      <h1>ABOUT <b> US</b></h1> 
-          <hr> <br>
-          <p>
-            A full-service team of award-winning copywriters,producers and graphic designers delivers
-            solution that harness the power of our digital properties. We work with you from conception through
-            activation to develop on-strategy, breakthrough creative that generates attention and response.
-          </p>
+        <h1>ABOUT <b> US</b></h1> 
+        <hr> <br>
+        <p>
+          A full-service team of award-winning copywriters,producers and graphic designers delivers
+          solution that harness the power of our digital properties. We work with you from conception through
+          activation to develop on-strategy, breakthrough creative that generates attention and response.
+        </p>
       </section>
-
       <aside>
         <code>
           <div class="row">
@@ -71,7 +68,7 @@ export default {
 /* ----------Navbar---------- */
 
 .navBar{
-  padding-top: 80px;
+  padding-top: 30px;
   padding-right: 40px;
   padding-left: 150px;
 }
@@ -162,6 +159,7 @@ code {
 }
 /* ----------End Right Section---------- */
 
+/* ----------Text---------- */
 
 p.in-column{
   font-size: 19px;
@@ -179,7 +177,9 @@ h1 {
 h2 {
   color: #ed3e3e;
 }
+/* ----------End Text---------- */
 
+/* ----------hr---------- */
 hr {
   background: #ddd; 
   color: #ddd;
@@ -202,5 +202,7 @@ hr.in-card {
   height: 1px;
   background-color: #ed3e3e;
 }
+
+/* ----------End hr---------- */
 
 </style>
