@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-  
     <div class="navBar">
       <img src="../assets/logo1.png"> 
         <ul>
@@ -69,54 +68,7 @@ export default {
 }
 </script>
 <style scoped>
-
-/* Create two equal columns that floats next to each other */
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  text-align:left;
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-code {
-  background: #fff;
-  border-radius: 6px;
-  color: #fff;
-  display: block;
-  padding: 20px 25px;
-  text-align: center;
-}
-
-
-section {
-  padding-top: 50px;
-  float: left;
-  width: 25%;
-}
-aside {
-  float: right;
-  width: 65%;
-  padding-top: 80px;
-}
+/* ----------Navbar---------- */
 
 .navBar{
   padding-top: 80px;
@@ -124,28 +76,6 @@ aside {
   padding-left: 150px;
 }
 
-
-.container{
-  padding-left: 150px;
-  padding-top: 40px;
-  padding-right: 150px;
-}
-p.in-column{
-  font-size: 19px;
-  color:#36383b;
-}
-p {
-  color: white;
-  font-size: 20px;
-}
-h1 {
-  color: white;
-  font-size: 50px;
-}
-
-h2 {
-  color: #ed3e3e;
-}
 ul {
   float: right;
   padding-right: 100px;
@@ -168,6 +98,87 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+/* ---------- End Navbar---------- */
+
+.container{
+  padding-left: 150px;
+  padding-top: 40px;
+  padding-right: 150px;
+}
+
+/* ----------Card---------- */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  text-align:left;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ----------End Card---------- */
+
+/* ----------Left Section---------- */
+
+section {
+  padding-top: 50px;
+  float: left;
+  width: 25%;
+}
+
+/* ----------End Left Section---------- */
+
+/* ----------Right Section---------- */
+
+aside {
+  float: right;
+  width: 65%;
+  padding-top: 80px;
+}
+
+code {
+  background: #fff;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  padding: 20px 25px;
+  text-align: center;
+}
+/* ----------End Right Section---------- */
+
+
+p.in-column{
+  font-size: 19px;
+  color:#36383b;
+}
+p {
+  color: white;
+  font-size: 20px;
+}
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+h2 {
+  color: #ed3e3e;
 }
 
 hr {
@@ -192,7 +203,5 @@ hr.in-card {
   height: 1px;
   background-color: #ed3e3e;
 }
-
-
 
 </style>
