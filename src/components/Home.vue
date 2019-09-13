@@ -9,16 +9,32 @@
         <router-view/>
     </div>
     <div class="container">
-    <h1>WE ARE SQUARE</h1>
-    <h1>AND WE ARE COMING SOON</h1>
-    <div class="countdown">
-    <h3>120</h3>
-    <h4>DAYS</h4>
-    </div>
-    </div>
-      
+      <h1>WE ARE SQUARE</h1>
+      <h1>AND WE ARE COMING SOON</h1>
+      <div class="row">
+        <div class="column" >
+        <h2>120</h2>
+        <p>DAYS</p>
+        </div>
+        <div class="column" >
+        <h2>21</h2>
+        <p>HOURS</p>
+        </div>
+        <div class="column" >
+        <h2>17</h2>
+        <p>MINUTES</p>
+        </div>
+        <div class="column" >
+        <h2>25</h2>
+        <p>SECONDS</p>
+        </div>
+      </div>
+      <form>
+        <input type="text" id="lname" name="lname" placeholder="Get notified by email...">
+        <button class="btn"><i class="fa fa-check"></i></button>
+      </form>
+    </div>  
   </div>
-
 </template>
 
 <script>
@@ -31,22 +47,81 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.container{
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 60px;
+  text-align:center;
+}
+
+/* ----------Navbar---------- */
+
+input[type=text] {
+  width: 40%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #D8D8D8;
+  color: white;
+  background-color: rgba(220, 220, 220, .3) ;
+  margin: 5px 10px 5px 0;
+}
+.btn {
+  background-color: rgba(220, 220, 220, .3);
+  border: 3px solid #D8D8D8;
+  box-sizing: border-box;
+  color: white;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
 .navBar{
-  padding-top: 80px;
+  padding-top: 30px;
   padding-right: 10px;
   padding-left: 150px;
 }
 
-.container{
-  padding-left: 150px;
-  padding-top: 150px;
-  text-align:center;
+/* ---------- End Navbar---------- */
+
+/* ----------Date Columns---------- */
+* {
+  box-sizing: border-box;
 }
-.countdown{
-  padding-top: 200px;
+
+
+.column {
+  float: left;
+  width: 15%;
+  padding: 7px;
 }
+.row {
+  padding-top: 130px;
+  padding-left: 27%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+}
+/* ----------End Date Columns---------- */
+
+/* ----------Text---------- */
+
 p {
   color: white;
   font-size: 17px;
@@ -55,7 +130,7 @@ h1 {
   color: white;
   font-size: 50px;
 }
-h3 {
+h2 {
   color: white;
   font-size: 30px;
 }
@@ -86,7 +161,9 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+/* ----------End Text---------- */
 
+/* ----------hr---------- */
 hr {
   width: 65px;
   float: left;
@@ -94,5 +171,6 @@ hr {
   height: 2px;
   background-color: white;
 }
+/* ----------End hr---------- */
 
 </style>
