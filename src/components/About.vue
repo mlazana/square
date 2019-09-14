@@ -8,7 +8,7 @@
         </ul>
         <router-view/>
     </div>  
-    <div class="container">
+    <div class="container clearfix">
       <section>
         <h1>ABOUT <b> US</b></h1> 
         <hr> <br>
@@ -22,15 +22,15 @@
         <code>
           <div class="row">
             <div class="column" >
-            <img src="../assets/graphic.png" style="width:60px;">
+            <img src="../assets/graphic.png" style="width:50px;">
               <h2>Graphic Design</h2> 
               <hr class="in-card">
               <p class="in-column">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
                 has beem the industry's standard dummy text ever since the 1500s.</p>
             </div>
             <div class="column" >
-            <img src="../assets/print.png" style="width:55px;">
-              <h2>Graphic Design</h2> 
+            <img src="../assets/print.png" style="width:45px;">
+              <h2>Pring Design</h2> 
               <hr class="in-card">
               <p class="in-column">When an unknown printer took a galley of type and scrambled it to make a type specimen book.
               It has survived not only five centuries.</p>
@@ -39,15 +39,15 @@
 
           <div class="row">
             <div class="column" >
-            <img src="../assets/pc.png" style="width:60px;">
-              <h2>Graphic Design</h2> 
+            <img src="../assets/pc.png" style="width:50px;">
+              <h2>Motion Design</h2> 
               <hr class="in-card">
               <p class="in-column">But also the leap into electronic typsetting, remaining essentially unchanged. It was
               popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.</p>
             </div>
             <div class="column" >
-            <img src="../assets/settings.png" style="width:60px;">
-              <h2>Graphic Design</h2> 
+            <img src="../assets/settings.png" style="width:50px;">
+              <h2>Strategy & Media</h2> 
               <hr class="in-card">
               <p class="in-column">and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
               It is not only simply a random text.</p>
@@ -65,17 +65,23 @@ export default {
 }
 </script>
 <style scoped>
+
+.container{
+  padding-left: 10%;;
+  padding-right: 10%;;
+  
+}
+
 /* ----------Navbar---------- */
 
 .navBar{
   padding-top: 30px;
-  padding-right: 40px;
-  padding-left: 150px;
+  padding-left: 10%;;
+  padding-right: 10%;;
 }
 
 ul {
   float: right;
-  padding-right: 100px;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
@@ -97,11 +103,6 @@ li a {
   text-decoration: none;
 }
 /* ---------- End Navbar---------- */
-
-.container{
-  padding-left: 150px;
-  padding-right: 150px;
-}
 
 /* ----------Card---------- */
 
@@ -136,7 +137,7 @@ li a {
 section {
   padding-top: 50px;
   float: left;
-  width: 25%;
+  width: 30%;
 }
 
 /* ----------End Left Section---------- */
@@ -151,10 +152,9 @@ aside {
 
 code {
   background: #fff;
-  border-radius: 6px;
   color: #fff;
   display: block;
-  padding: 20px 25px;
+  padding: 1vw 35px;
   text-align: center;
 }
 /* ----------End Right Section---------- */
@@ -162,20 +162,22 @@ code {
 /* ----------Text---------- */
 
 p.in-column{
-  font-size: 19px;
+  font-size: 1.1vw;
   color:#36383b;
 }
 p {
   color: white;
-  font-size: 18px;
+  font-size: 1vw;
+  padding-bottom : 1.5vw; 
 }
 h1 {
   color: white;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 h2 {
   color: #ed3e3e;
+  font-size: 20px;
 }
 /* ----------End Text---------- */
 
@@ -187,7 +189,7 @@ hr {
   float: none; 
   width: 20%; 
   height: .1em;
-  margin: 0 0 1.45em;
+  margin: 0 0 0em;
   border: none; 
 }
 hr.space {
