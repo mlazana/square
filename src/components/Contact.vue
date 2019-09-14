@@ -171,7 +171,7 @@ p.in-column{
 p {
   color: white;
   font-size: 1vw;
-  padding-bottom : 1.5vw; 
+  padding-bottom : 1.2vw; 
 }
 h1 {
   color: white;
