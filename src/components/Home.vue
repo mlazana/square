@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <div class="bg"></div>
     <div class="navBar">
       <img src="../assets/logo1.png"> 
         <ul>
@@ -8,7 +9,7 @@
         </ul>
         <router-view/>
     </div>
-    <div class="container">
+    <div class="container clearfix">
       <h1>WE ARE SQUARE</h1>
       <h1>AND WE ARE COMING SOON</h1>
       <div class="row">
@@ -55,7 +56,6 @@ export default {
   padding-top: 60px;
   text-align:center;
 }
-
 /* ----------Navbar---------- */
 
 input[type=text] {
