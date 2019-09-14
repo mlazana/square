@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+   <div class="bg"></div> 
     <div class="navBar">
       <img src="../assets/logo1.png"> 
         <ul>
@@ -11,13 +12,13 @@
     <div class="container">
       <section>
         <h1>CONTACT <b> US</b></h1> 
-        <hr> <br>
+        <hr>
         <p>
           We are here to help you and find answers to your questions on our Support section. If you can't
           find answer to your question or have any feedback, reach out to us by completing the form. All fields
           are mandatory unless otherwise stated.
         </p>
-        <hr> <br>
+        <hr> 
         <p><b>Adress:</b> 123 Palo Alto, Palo Alto, CA 94300</p>
         <p><b>Phone:</b> +1 234-567-8910</p>
         <p><b>Email:</b> contact@yourdomain.net</p>
@@ -37,7 +38,8 @@
           </form>
          </code>
       </aside>
-    </div>  
+    </div> 
+    
   </div>
 </template>
 
@@ -48,22 +50,28 @@ export default {
 </script>
 <style scoped>
 
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: blue;
+}
+
 .container{
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 10%;;
+  padding-right: 10%;;
+  
 }
 
 /* ----------Navbar---------- */
 
 .navBar{
   padding-top: 30px;
-  padding-right: 40px;
-  padding-left: 150px;
+  padding-left: 10%;;
+  padding-right: 10%;;
 }
 
 ul {
   float: right;
-  padding-right: 100px;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
@@ -90,34 +98,37 @@ li a {
 
 input[type=text] {
   width: 90%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 12px 0px;
+  margin: 16px 0;
   box-sizing: border-box;
   border: none;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #ed3e3e;
   font-family: 'Roboto', sans-serif;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
+
+
 textarea {
   width: 90%;
-  padding: 12px 20px;
+  padding: 12px 0px;
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
-  border-bottom: 2px solid red;
-  padding-bottom: 10px;
+  border-bottom: 2px solid #ed3e3e;
   font-family: 'Roboto', sans-serif;
+  
   
 }
 
 input[type=submit]{
   border: 2px solid #ed3e3e;
   color: #ed3e3e;
-  padding: 16px 32px;
+  padding: 10px 35px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 6px 2px;
   cursor: pointer;
   background-color: white;
+  text-transform: uppercase;
 }
 input[type=submit]:hover {
   background-color: #FFD7D7;
@@ -125,40 +136,12 @@ input[type=submit]:hover {
 
 /* ----------End Contact Form---------- */
 
-/* ----------Card---------- */
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  text-align:left;
-  font-family: 'Roboto', sans-serif;
-}
-
-/* ----------End Card---------- */
-
 /* ----------Left Section---------- */
 
 section {
   padding-top: 50px;
   float: left;
-  width: 25%;
+  width: 30%;
 }
 
 /* ----------End Left Section---------- */
@@ -173,10 +156,9 @@ aside {
 
 code {
   background: #fff;
-  border-radius: 6px;
   color: #fff;
   display: block;
-  padding: 20px 25px;
+  padding: 25px 35px;
   text-align: center;
 }
 /* ----------End Right Section---------- */
@@ -188,13 +170,12 @@ p.in-column{
 }
 p {
   color: white;
-  font-size: 18px;
-  padding-bottom : 10px;
-  
+  font-size: 1vw;
+  padding-bottom : 1.5vw; 
 }
 h1 {
   color: white;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 h2 {
@@ -229,39 +210,18 @@ hr.in-card {
 
 .fa {
   padding: 4px;
-  font-size: 30px;
-  width: 40px;
+  font-size: 20px;
+  width: 20px;
   text-align: center;
   text-decoration: none;
   margin: 8px 6px;
+  background: #E7E7E7;
+  opacity: 0.6;
+  color: rgba(237, 62, 62, 0.6)
 }
 
 .fa:hover {
     opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #C4C4C4;
-  opacity: 0.4;
-  color: white;
-}
-
-.fa-twitter {
-  background: #C4C4C4;
-  opacity: 0.4;
-  color: white;
-}
-
-.fa-google {
-  background: #C4C4C4;
-  opacity: 0.4;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #C4C4C4;
-  opacity: 0.4;
-  color: white;
 }
 /* ----------End fa Icons---------- */
 </style>
