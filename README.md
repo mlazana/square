@@ -18,6 +18,11 @@ This project requires:
 - npm
 - git
 
+Node modules:
+
+- nodemailer
+- node-mailjet
+
 ## Run
 
 `git clone https://github.com/mlazana/square.git`
