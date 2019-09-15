@@ -81,7 +81,7 @@ input[type=text] {
 .navBar{
   padding-top: 30px;
   padding-left: 15%;
-  padding-right: 15%;
+  padding-right: 10%;
 }
 
 /* ---------- End Navbar---------- */
