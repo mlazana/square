@@ -2,7 +2,7 @@
   <div class="about">
    <div class="bg"></div> 
     <div class="navBar">
-      <img src="../assets/logo1.png"> 
+      <img src="../assets/logo1.png" class="logo"> 
         <ul>
         <li ><router-link to="Home"> <b>Home</b></router-link> </li>
         <li> <router-link to="About"> <b>About Us</b></router-link></li>
@@ -10,8 +10,8 @@
         <router-view/>
     </div>
     <div class="container">
-      <section>
-        <h1>CONTACT <b> US</b></h1> 
+    <div class="row">
+        <div class="side"><h1>CONTACT <b> US</b></h1>
         <hr>
         <p>
           We are here to help you and find answers to your questions on our Support section. If you can't
@@ -26,8 +26,9 @@
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-google"></a>
         <a href="#" class="fa fa-linkedin"></a>
-      </section>
-      <aside>
+    
+      </div>
+      <div class="main">
         <code>         
           <form   @submit="onSubmit"> 
             <input v-model="form.name" type="text" id="name" name="name" placeholder="Your Name" >
@@ -37,7 +38,8 @@
             <input type="submit" value="Submit" >
           </form>
          </code>
-      </aside>
+      </div>
+      </div>
     </div> 
     
   </div>
@@ -66,29 +68,15 @@ export default {
     }
 }
   
-  
-
 </script>
 <style scoped>
-
-body, html {
-  height: 100%;
-  margin: 0;
-  background-image: blue;
-}
-
-.container{
-  padding-left: 10%;;
-  padding-right: 10%;;
-  
-}
 
 /* ----------Navbar---------- */
 
 .navBar{
   padding-top: 30px;
-  padding-left: 10%;;
-  padding-right: 10%;;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 ul {
@@ -115,6 +103,31 @@ li a {
 }
 /* ---------- End Navbar---------- */
 
+/* ----------Container---------- */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  padding: 0px;
+}
+
+.main {
+  flex: 50%;
+  padding-top: 20px !important ;
+  padding: 20px;
+}
+
+.container{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20px;
+  
+}
+/* ----------End Container---------- */
+
 /* ----------Contact Form---------- */
 
 input[type=text] {
@@ -127,7 +140,6 @@ input[type=text] {
   font-family: 'Roboto', sans-serif;
   padding-bottom: 20px;
 }
-
 
 textarea {
   width: 90%;
@@ -157,28 +169,12 @@ input[type=submit]:hover {
 
 /* ----------End Contact Form---------- */
 
-/* ----------Left Section---------- */
-
-section {
-  padding-top: 50px;
-  float: left;
-  width: 30%;
-}
-
-/* ----------End Left Section---------- */
-
 /* ----------Right Section---------- */
-
-aside {
-  float: right;
-  width: 65%;
-  padding-top: 80px;
-}
 
 code {
   background: #fff;
   color: #fff;
-  display: block;
+  display: flex;
   padding: 25px 35px;
   text-align: center;
 }
@@ -191,7 +187,7 @@ p.in-column{
 }
 p {
   color: white;
-  font-size: 1vw;
+  font-size: 20px;;
   padding-bottom : 1.2vw; 
 }
 h1 {
@@ -245,4 +241,22 @@ hr.in-card {
     opacity: 0.7;
 }
 /* ----------End fa Icons---------- */
+
+@media screen and (max-width: 700px){
+  .logo{
+    width:50px;
+  }
+   .navBar{
+  padding-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+ul {
+  float: right;
+  padding-right: 20px;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+}
 </style>
