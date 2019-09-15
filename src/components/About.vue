@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="navBar">
-      <img src="../assets/logo1.png"> 
+      <img src="../assets/logo1.png" class="logo"> 
         <ul>
         <li ><router-link to="Home"> <b>Home</b></router-link> </li>
         <li> <router-link to="Contact"> <b>Get in touch</b></router-link></li>
@@ -9,16 +9,17 @@
         <router-view/>
     </div>  
     <div class="container clearfix">
-      <section>
-        <h1>ABOUT <b> US</b></h1> 
-        <hr> <br>
-        <p>
-          A full-service team of award-winning copywriters,producers and graphic designers delivers
-          solution that harness the power of our digital properties. We work with you from conception through
-          activation to develop on-strategy, breakthrough creative that generates attention and response.
-        </p>
-      </section>
-      <aside>
+    <div class="first-row">
+        <div class="side">
+          <h1>ABOUT <b> US</b></h1> 
+          <hr> <br>
+          <p>
+            A full-service team of award-winning copywriters,producers and graphic designers delivers
+            solution that harness the power of our digital properties. We work with you from conception through
+            activation to develop on-strategy, breakthrough creative that generates attention and response.
+          </p>
+       </div>
+       <div class="main">
         <code>
           <div class="row">
             <div class="column" >
@@ -54,7 +55,8 @@
             </div>
           </div>
          </code>
-      </aside>
+      </div>
+      </div>
     </div>  
   </div>
 </template>
@@ -66,18 +68,12 @@ export default {
 </script>
 <style scoped>
 
-.container{
-  padding-left: 10%;;
-  padding-right: 10%;;
-  
-}
-
 /* ----------Navbar---------- */
 
 .navBar{
   padding-top: 30px;
-  padding-left: 10%;;
-  padding-right: 10%;;
+  padding-left: 15%;;
+  padding-right: 15%;;
 }
 
 ul {
@@ -103,6 +99,30 @@ li a {
   text-decoration: none;
 }
 /* ---------- End Navbar---------- */
+
+/* ----------Container---------- */
+.first-row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+}
+
+.main {
+  flex: 50%;
+  padding-top: 20px !important ;
+  padding: 20px;
+}
+
+.container{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20px ;
+  
+}
+/* ----------End Container---------- */
 
 /* ----------Card---------- */
 
@@ -132,29 +152,13 @@ li a {
 
 /* ----------End Card---------- */
 
-/* ----------Left Section---------- */
-
-section {
-  padding-top: 50px;
-  float: left;
-  width: 30%;
-}
-
-/* ----------End Left Section---------- */
-
 /* ----------Right Section---------- */
-
-aside {
-  float: right;
-  width: 65%;
-  padding-top: 80px;
-}
 
 code {
   background: #fff;
   color: #fff;
   display: block;
-  padding: 1vw 35px;
+  padding: 2vw 35px;
   text-align: center;
 }
 /* ----------End Right Section---------- */
@@ -162,13 +166,13 @@ code {
 /* ----------Text---------- */
 
 p.in-column{
-  font-size: 1.1vw;
+  font-size: 19px;
   color:#36383b;
 }
 p {
   color: white;
-  font-size: 1vw;
-  padding-bottom : 1.5vw; 
+  font-size: 20px;;
+  padding-bottom : 1.2vw; 
 }
 h1 {
   color: white;
@@ -206,5 +210,32 @@ hr.in-card {
 }
 
 /* ----------End hr---------- */
+@media screen and (max-width: 700px){
+  .logo{
+    width:50px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .code {
+  background: #fff;
+  color: #fff;
+  display: block;
+  padding: 3vw 85px;
+  text-align: center;
+}
+ .navBar{
+  padding-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+ul {
+  float: right;
+  padding-right: 20px;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+}
 
 </style>
