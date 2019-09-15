@@ -1,29 +1,33 @@
-# square
+<div align="center">
+<img src="src/assets/readme.png" height="80px" >
+<h1> Web application created with Vuejs
 
-## Project setup
-```
-npm install
-```
+</h1>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+<pre>
+<div align="center">This projected was developed in terms of a hiring process for an internship. 
+</pre>
 
-### Compiles and minifies for production
-```
-npm run build
-```
+</div>
 
-### Run your tests
-```
-npm run test
-```
+## Getting started
 
-### Lints and fixes files
-```
-npm run lint
-```
+This project requires:
 
-### Customize configuration
+- nodejs
+- npm
+- git
+
+## Run
+
+`git clone https://github.com/mlazana/square.git`
+<br> <br>
+`cd square`
+<br> <br>
+`npm run serve`
+
+## In your browser, go to http://localhost:8000/#/Home
+
+## Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
