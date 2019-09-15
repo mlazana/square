@@ -29,11 +29,11 @@
       </section>
       <aside>
         <code>         
-          <form> 
-            <input type="text" id="name" name="name" placeholder="Your Name">
-            <input type="text" id="email" name="email" placeholder="Your Email">
-            <input type="text" id="company" name="company" placeholder="Your Company">
-            <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
+          <form   @submit="onSubmit"> 
+            <input v-model="form.name" type="text" id="name" name="name" placeholder="Your Name" >
+            <input v-model="form.email" type="text" id="email" name="email" placeholder="Your Email" >
+            <input v-model="form.company" type="text" id="company" name="company" placeholder="Your Company" >
+            <textarea v-model="form.subject" id="subject" name="subject" placeholder="Your message"  style="height:200px"></textarea>
             <input type="submit" value="Submit" >
           </form>
          </code>
@@ -44,9 +44,30 @@
 </template>
 
 <script>
+
 export default {
-  name: 'About' 
+  name: 'Contact',
+  data() {
+    return {
+      form: {
+          name:'',
+          email:'',
+          company:'',
+          subject:''
+      }
+    }
+  },
+  methods: {
+      onSubmit(e) {
+        axios.post('../router/mail.js', form).then( (response) => {
+          console.log('success')
+        })
+      }
+    }
 }
+  
+  
+
 </script>
 <style scoped>
 
