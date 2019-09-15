@@ -2,7 +2,7 @@
   <div class="about">
     <div class="bg"></div>
     <div class="navBar">
-      <img src="../assets/logo1.png"> 
+      <img src="../assets/logo1.png" class="logo"> 
         <ul>
         <li ><router-link to="About"> <b>About Us</b></router-link> </li>
         <li> <router-link to="Contact"> <b>Get in touch</b></router-link></li>
@@ -14,20 +14,20 @@
       <h1>AND WE ARE COMING SOON</h1>
       <div class="row">
         <div class="column" >
-        <h2>120</h2>
-        <p>DAYS</p>
-        </div>
-        <div class="column" >
-        <h2>21</h2>
-        <p>HOURS</p>
-        </div>
-        <div class="column" >
-        <h2>17</h2>
-        <p>MINUTES</p>
-        </div>
-        <div class="column" >
-        <h2>25</h2>
-        <p>SECONDS</p>
+          <h2>120</h2>
+          <p>DAYS</p>
+          </div>
+          <div class="column" >
+          <h2>21</h2>
+          <p>HOURS</p>
+          </div>
+          <div class="column" >
+          <h2>17</h2>
+          <p>MINUTES</p>
+          </div>
+          <div class="column" >
+          <h2>25</h2>
+          <p>SECONDS</p>
         </div>
       </div>
       <form>
@@ -51,11 +51,12 @@ export default {
 <style scoped>
 
 .container{
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 60px;
   text-align:center;
 }
+
 /* ----------Navbar---------- */
 
 input[type=text] {
@@ -79,8 +80,8 @@ input[type=text] {
 }
 .navBar{
   padding-top: 30px;
-  padding-right: 10px;
-  padding-left: 150px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 /* ---------- End Navbar---------- */
@@ -107,17 +108,6 @@ input[type=text] {
   clear: both;
 }
 
-@media screen and (max-width: 900px) {
-  .column  {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column  {
-    width: 100%;
-  }
-}
 /* ----------End Date Columns---------- */
 
 /* ----------Text---------- */
@@ -172,5 +162,38 @@ hr {
   background-color: white;
 }
 /* ----------End hr---------- */
+
+@media screen and (max-width: 700px){
+  .logo{
+    width:50px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .navBar{
+  padding-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+ul {
+  float: right;
+  padding-right: 20px;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+.column {
+  float:left;
+  width: 40%;
+}
+.row {
+  padding-top: 30px;
+  padding-left: 15%;
+  padding-right: 5%;
+}
+input[type=text] {
+  width: 80%;
+}
+}
 
 </style>
